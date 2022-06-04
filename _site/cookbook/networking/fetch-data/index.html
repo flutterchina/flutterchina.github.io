@@ -13,9 +13,9 @@
   <meta name="baidu_union_verify" content="d98c3b5eb9879153e86969574c39ced9">
   <link rel="stylesheet" href="/css/lavish-bootstrap.css">
   <link rel="stylesheet" href="/css/main.css">
-  <link href="https://cdn.jsdelivr.net/gh/google/material-design-icons@3.0.1/iconfont/material-icons.css" rel="stylesheet">
+
   <!--<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro%7CRoboto:500,400italic,300,400" rel="stylesheet">-->
-  
+
   <link rel="canonical" href="https://www.flutterchina.club/cookbook/networking/fetch-data/">
   <script>
     function onSubmit() {
@@ -23,7 +23,7 @@
         return false;
     }
   </script>
-  
+
   <meta name="google-site-verification" content="HFqxhSbf9YA_0rBglNLzDiWnrHiK_w4cqDh2YD2GEY4" />
 </head>
 
@@ -149,13 +149,13 @@
 
         </div>
 
-        
-        
+
+
 
         <!-- Content Column -->
-        
+
             <div class="col-sm-8  main-contents">
-                
+
 
                 <div class="main-contents-body">
                     <!--<div style="padding: 16px 10px; background:#4097de; border-radius: 3px; margin-bottom: 50px;">-->
@@ -166,7 +166,7 @@
                     <!--</div>-->
                     <article class="post-content">
 
-  
+
   <header class="post-header">
       <div class="btn-group contribute" role="group">
          <a href="https://github.com/flutterchina/website/blob/master/cookbook/networking/fetch-data.md" class="btn btn-sm">
@@ -181,7 +181,7 @@
    </div>
 
   </header>
-  
+
 
   <p>从大多数应用程序都需要从互联网上获取数据，Dart和Flutter提供了相关工具！</p>
 
@@ -261,9 +261,9 @@
 
 <div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Future</span><span class="o">&lt;</span><span class="n">Post</span><span class="o">&gt;</span> <span class="n">fetchPost</span><span class="o">()</span> <span class="n">async</span> <span class="o">{</span>
   <span class="kd">final</span> <span class="n">response</span> <span class="o">=</span> <span class="n">await</span> <span class="n">http</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="s">'https://jsonplaceholder.typicode.com/posts/1'</span><span class="o">);</span>
-  <span class="kd">final</span> <span class="n">json</span> <span class="o">=</span> <span class="n">JSON</span><span class="o">.</span><span class="na">decode</span><span class="o">(</span><span class="n">response</span><span class="o">.</span><span class="na">body</span><span class="o">);</span> 
-  
-  <span class="k">return</span> <span class="k">new</span> <span class="n">Post</span><span class="o">.</span><span class="na">fromJson</span><span class="o">(</span><span class="n">json</span><span class="o">);</span> 
+  <span class="kd">final</span> <span class="n">json</span> <span class="o">=</span> <span class="n">JSON</span><span class="o">.</span><span class="na">decode</span><span class="o">(</span><span class="n">response</span><span class="o">.</span><span class="na">body</span><span class="o">);</span>
+
+  <span class="k">return</span> <span class="k">new</span> <span class="n">Post</span><span class="o">.</span><span class="na">fromJson</span><span class="o">(</span><span class="n">json</span><span class="o">);</span>
 <span class="o">}</span>
 </code></pre></div></div>
 
@@ -290,7 +290,7 @@
     <span class="o">}</span> <span class="k">else</span> <span class="k">if</span> <span class="o">(</span><span class="n">snapshot</span><span class="o">.</span><span class="na">hasError</span><span class="o">)</span> <span class="o">{</span>
       <span class="k">return</span> <span class="k">new</span> <span class="n">Text</span><span class="o">(</span><span class="s">"</span><span class="si">${snapshot.error}</span><span class="s">"</span><span class="o">);</span>
     <span class="o">}</span>
-   
+
     <span class="c1">// By default, show a loading spinner</span>
     <span class="k">return</span> <span class="k">new</span> <span class="n">CircularProgressIndicator</span><span class="o">();</span>
   <span class="o">},</span>
@@ -372,17 +372,17 @@
 
 </article>
 
-                    
+
                       <div style="padding: 20px 0">
                         <h2>留言</h2>
                         <div id="comments"></div>
                       </div>
-                    
+
                 </div>
 
             </div>
 
-            
+
 
         </div> <!-- /.row -->
     </div> <!-- /.container -->
@@ -423,16 +423,16 @@
 
     <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
     <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>-->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <!--<script async="" defer="" src="//survey.g.doubleclick.net/async_survey?site=at3ul57xpub2vk3oxt2ytw365i"></script>-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <script src="/js/sidebar_toggle.js"></script>
     <script src="/js/prism.js"></script>
     <script src="/js/tabs.js"></script>
-    
+
       <link rel="stylesheet" href="https://www.flutterchina.club/css/gitment.css">
       <script src="https://www.flutterchina.club/js/comment.js"></script>
-    
+
 
 </body>
 </html>
