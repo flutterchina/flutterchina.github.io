@@ -7,7 +7,7 @@ const path = require('path') ;
 const app = new koa() ;
 
 // 获取静态资源
-app.use(static(path.join(__dirname,'_site'))) ;
+app.use(static(path.join(__dirname,'docs'))) ;
 
 
 
