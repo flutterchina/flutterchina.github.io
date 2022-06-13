@@ -10,7 +10,7 @@ Flutter支持使用由其他开发者贡献给Flutter和Dart生态系统的共�
 
 现有的软件包支持许多使用场景，例如，网络请求（[`http`](/networking/)），自定义导航/路由处理（[`fluro`](https://pub.dartlang.org/packages/fluro)），
 集成设备API（如[`url_launcher`](https://pub.dartlang.org/packages/url_launcher)＆[`battery`](https://pub.dartlang.org/packages/battery)）
-以及使用第三方平台SDK（如 [Firebase](https://github.com/flutter/plugins/blob/master/FlutterFire.md)(需翻墙)））。
+以及使用第三方平台SDK（如 [Firebase](https://github.com/flutter/plugins/blob/master/FlutterFire.md)））。
 
 如果您正打算开发新的软件包，请参阅[开发软件包](/developing-packages/)。
 

@@ -8,7 +8,7 @@ keywords: Flutter自定义字体
 
 ## 介绍
 
-你可以在你的Flutter应用程序中使用不同的字体。例如，您可能会使用您的设计人员创建的自定义字体，或者您可能会使用[Google Fonts(需翻墙)）](https://fonts.google.com/)中的字体。
+你可以在你的Flutter应用程序中使用不同的字体。例如，您可能会使用您的设计人员创建的自定义字体，或者您可能会使用[Google Fonts）](https://fonts.google.com/)中的字体。
 
 本页介绍如何为Flutter应用配置字体，并在渲染文本时使用它们。
 
